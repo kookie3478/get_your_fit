@@ -4,3 +4,4 @@ PyMuPDF==1.18.19  # This is your fitz module
 Cython>=0.29.21
 scikit-learn
 gunicorn==20.1.0
+
