@@ -1,4 +1,7 @@
-Flask==2.2.5
+Flask==2.0.1
+flask_cors==5.0.1
+PyMuPDF==1.18.19  # This is your fitz module
+Cython>=0.29.21
+scikit-learn
 gunicorn==20.1.0
-PyMuPDF==1.21.1
-flask-cors
+
