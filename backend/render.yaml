@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: resume-matcher-api
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    plan: free
+    autoDeploy: true
+environment:
+  setup:
+    - apt-get update && apt-get install -y libmupdf-dev
