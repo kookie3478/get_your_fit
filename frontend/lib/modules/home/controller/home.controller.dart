@@ -25,7 +25,7 @@ class HomeController extends GetxController{
       print("Preparing request...");
       if (selectedFile != null && jobDescription.isNotEmpty) {
         var request = http.MultipartRequest(
-            'POST', Uri.parse('http://172.16.112.29/match'));
+            'POST', Uri.parse('https://get-your-fit.onrender.com/match'));
         request.files.add(
             await http.MultipartFile.fromPath('resume', selectedFile!.path));
         request.fields['jd'] = jobDescription;
