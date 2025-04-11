@@ -1,8 +1,6 @@
 services:
   - type: web
     name: resume-matcher
-    env: python
-    buildCommand: |
-      apt-get update && apt-get install -y libmupdf-dev
-      pip install -r requirements.txt
-    startCommand: gunicorn app:app
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
